@@ -10,56 +10,56 @@ class Scratch3dexapi {
             blocks: [
                 {
                     opcode: 'get',
-                    blockType: BlockType.REPORTER,
+                    blockType: Scratch.BlockType.REPORTER,
                     text: 'GET [URL]',
                     arguments: {
                         URL: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'a'
                         },
                     }
                 },
                 {
                     opcode: 'getParam',
-                    blockType: BlockType.REPORTER,
+                    blockType: Scratch.BlockType.REPORTER,
                     text: 'get [PROPERTY] from [JSON]',
                     arguments: {
                         PROPERTY: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'a'
                         },
                         JSON: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'b'
                         }
                     }
                 },
                 {
                     opcode: 'getArrayIndex',
-                    blockType: BlockType.REPORTER,
+                    blockType: Scratch.BlockType.REPORTER,
                     text: 'get index [INDEX] from [ARRAY]',
                     arguments: {
                         INDEX: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'a'
                         },
                         ARRAY: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'b'
                         }
                     }
                 },
                 {
                     opcode: 'send',
-                    blockType: BlockType.REPORTER,
+                    blockType: Scratch.BlockType.REPORTER,
                     text: 'POST [URL] with json [REQ]',
                     arguments: {
                         URL: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'a'
                         },
                         REQ: {
-                            type: ArgumentType.STRING,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: 'b'
                         }
                     }
