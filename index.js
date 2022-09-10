@@ -1,6 +1,3 @@
-const ArgumentType = require('../../extension-support/argument-type');
-const BlockType = require('../../extension-support/block-type');
-
 class Scratch3dexapi {
     constructor (runtime) {
         this.runtime = runtime;
