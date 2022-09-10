@@ -63,12 +63,37 @@ class Scratch3dexapi {
                             defaultValue: 'b'
                         }
                     }
+                },
+                {
+                    opcode: 'getProxy',
+                    blockType: Scratch.BlockType.REPORTER,
+                    text: 'GET [URL] with proxy [PROXY]',
+                    arguments: {
+                        URL: {
+                            type: Scratch.ArgumentType.STRING,
+                            defaultValue: 'a'
+                        },
+                        PROXY: {
+                            type: Scratch.ArgumentType.STRING,
+                            defaultValue: 'b'
+                        }
+                    }
                 }
             ],
             menus: {}
         };
     }
-    
+    getProxy (args) {
+        async function hi (url) {
+            let r = await fetch(args.PROXY, {
+                headers: {
+                    'Target-URL': args.URL
+                }
+            });
+            return r;
+        };
+        hi("https://api.chucknorris.io/jokes/random").then((r)=>{ let a=console.log(r.json().then(r=>{return r}));
+    }
     getArrayIndex (args) {
         let a = args.ARRAY.slice(0, -1).substr(1);
         let b = args.INDEX;
