@@ -89,8 +89,8 @@ class Scratch3dexapi {
 
     get (args) {
         return fetch(args.URL)
-            .then((response) => response.json())
-            .then((data) => {return JSON.stringify(data)});
+            .then((response) => response.text())
+            .then((data) => {return data});
     }
 
     getParam (args) {
