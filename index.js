@@ -92,8 +92,12 @@ class Scratch3dexapi {
             });
             return r;
         };
-        hi("https://api.chucknorris.io/jokes/random").then((r)=>{ let a=console.log(r.json().then(r=>{return r}));
-    },
+        hi("https://api.chucknorris.io/jokes/random").then((r)=>{ 
+            let a=console.log(r.json().then(r=>{
+                return r
+            }))});
+    }
+    
     getArrayIndex (args) {
         let a = args.ARRAY.slice(0, -1).substr(1);
         let b = args.INDEX;
