@@ -107,5 +107,4 @@ class Scratch3dexapi {
         
     }
 }
-
-module.exports = Scratch3dexapi;
+Scratch.extensions.register(new Scratch3dexapi());
